@@ -63,4 +63,4 @@ Tal Krispin
 Shahar Ben Laiche
 
 Collaborators
-Volcani - Israel's national powerhouse of innovation.
+Volcani Institute - Israel's national powerhouse of innovation.
