@@ -56,7 +56,9 @@ Random Forest	2.532	2.271	Combined zones + economic data
 
 👨‍💻 Authors
 Dan Gutman
+
 Tal Krispin
+
 Shahar Ben Laiche
 
 Collaborators
