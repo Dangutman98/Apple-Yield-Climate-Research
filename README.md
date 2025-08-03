@@ -32,7 +32,7 @@ This repository contains a project for predicting crop yield using **machine lea
 ```bash
 git clone https://github.com/<your-username>/<repository-name>.git
 cd <repository-name>
-
+```
 ### 2️⃣ Open the notebooks
 Open the .ipynb files directly in Jupyter Notebook, VS Code, or Google Colab (you can open them in Colab straight from GitHub).
 
