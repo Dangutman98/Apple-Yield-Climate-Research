@@ -55,6 +55,7 @@ LSTM	2.497	2.316	Individual zone – Yonatan
 Random Forest	2.532	2.271	Combined zones + economic data
 
 👨‍💻 Authors
+
 Dan Gutman
 
 Tal Krispin
