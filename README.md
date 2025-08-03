@@ -1,66 +1,82 @@
-# 🌾 Crop Yield Prediction  
+# 🌾 Crop Yield Prediction
 
-This repository contains a project for predicting crop yield using **machine learning models (XGBoost, LSTM, Random Forest)** based on climatic and economic variables.  
-
----
-
-## 📂 Project Structure  
-- 📓 **Notebooks** – Jupyter/Colab `.ipynb` files for data analysis, model training, and evaluation  
-- 📊 **Results** – Performance comparisons and visualizations  
-- 📁 **Data** – Dataset files (not included due to size -> see below)  
+This repository contains a project for predicting crop yield using **machine learning models (XGBoost, LSTM, Random Forest)** based on climatic and economic variables.
 
 ---
 
-## 📌 Features  
-- ✅ Descriptive statistics (mean, median, standard deviation)  
-- ✅ Data distribution tests (Histogram, Q-Q Plot, Shapiro-Wilk, Pearson)  
-- ✅ Models: XGBoost, LSTM, Random Forest  
-- ✅ Evaluation using RMSE vs. STD  
+## 📂 Project Structure
+
+* 📓 **Notebooks** – Colab `.ipynb` files for data analysis, model training, and evaluation:
+
+  * `ApplesProjectEDA.ipynb` – Exploratory Data Analysis and preprocessing.
+  * `ApplesProjectModels.ipynb` – Model training and evaluation.
+* 📈 **Results** – Performance comparisons and visualizations.
+* 📁 **Data** – Dataset files (not included in the repository, see details below).
 
 ---
 
-## 📊 Results Summary  
-- **XGBoost with feature combination** achieved more accurate predictions compared to linear regression.  
-- **RMSE significantly lower than STD** indicates high prediction accuracy.  
-- **LSTM and Random Forest** performed weaker in this case.  
+## 📌 Features
+
+* ✅ Descriptive statistics (mean, median, standard deviation).
+* ✅ Data distribution tests (Histogram, Q-Q Plot, Shapiro-Wilk, Pearson).
+* ✅ Models: XGBoost, LSTM, Random Forest.
+* ✅ Evaluation using RMSE vs. STD.
 
 ---
 
-## 🚀 How to Use  
+## 📈 Results Summary
 
-### 1️⃣ Clone the repository  
+| Model          | Test STD | RMSE  | Zone / Approach                |
+| -------------- | -------- | ----- | ------------------------------ |
+| XGBoost        | 2.497    | 2.244 | Individual zone – Yonatan      |
+| XGBoost + Econ | 2.071    | 1.364 | Combined zones + economic data |
+| LSTM           | 2.497    | 2.316 | Individual zone – Yonatan      |
+| Random Forest  | 2.532    | 2.271 | Combined zones + economic data |
+
+* **XGBoost with combined features** outperformed other models.
+* **RMSE significantly lower than STD** indicates high prediction accuracy.
+* **LSTM and Random Forest** underperformed in this specific scenario.
+
+---
+
+## 🚀 How to Use
+
+### 1️⃣ Clone the repository
+
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/Dangutman98/Apple-Yield-Climate-Research.git
+cd Apple-Yield-Climate-Research
 ```
-### 2️⃣ Open the notebooks
-Open the .ipynb files directly in Jupyter Notebook, VS Code, or Google Colab (you can open them in Colab straight from GitHub).
 
-### 3️⃣ Run step by step
-Perform data preprocessing
+### 2️⃣ Open the Notebooks in Google Colab
 
-Train the models
+* Open `ApplesProjectEDA.ipynb` and run it step-by-step for EDA & preprocessing.
+* Then run `ApplesProjectModels.ipynb` for model training and evaluation.
 
-Evaluate results
+> **ℹ️ Note:**
+> The datasets are **loaded directly from the authors' Google Drive** during notebook execution.
+> You **do not need to upload any files manually**. Simply run the notebook cells as-is.
 
-📦 Data
-📌 Dataset is not included due to size limitations.
-➡️ You need to upload your own dataset when running the notebooks.
+### 3️⃣ Recommended Run Order
 
-📈 Model Evaluation
-Model	Test STD	RMSE	Zone / Approach
-XGBoost	2.497	2.244	Individual zone – Yonatan
-XGBoost	2.071	1.364	Combined zones + economic data
-LSTM	2.497	2.316	Individual zone – Yonatan
-Random Forest	2.532	2.271	Combined zones + economic data
+1. Run `ApplesProjectEDA.ipynb` (mandatory for data preparation).
+2. Run `ApplesProjectModels.ipynb` (after EDA is completed).
 
-👨‍💻 Authors
+---
 
-Dan Gutman
+## 👨‍💻 Authors
 
-Tal Krispin
+* **Dan Gutman**
+* **Tal Krispin**
+* **Shahar Ben Laiche**
 
-Shahar Ben Laiche
+### Collaborators
 
-Collaborators
-Volcani Institute - Israel's national powerhouse of innovation.
+* **Volcani Institute** – Israel's national powerhouse of agricultural innovation.
+
+---
+
+### ⚠️ Data Notice
+
+* The dataset files are **not included in this repository** due to size constraints.
+* The notebooks are pre-configured to **fetch the required files from a private Google Drive**. Ensure you have access via the shared links or modify paths accordingly.
